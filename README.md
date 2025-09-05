@@ -1,69 +1,75 @@
-# React + TypeScript + Vite
+# 📊 Comments Dashboard (React + TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A stylish dashboard built with **React, TypeScript, Vite, and TailwindCSS** for displaying comments data with pagination, search, and sorting.  
+Includes a **Profile page** (with dummy user data) and a **Comments Dashboard page** (with 500 dummy comments).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- **Profile Page**
+  - Displays first user record from dummy API
+  - Glassmorphism profile card UI
+  - Navigation back to Dashboard
 
-## Expanding the ESLint configuration
+- **Comments Dashboard**
+  - Fetches 500 comments from dummy API
+  - Custom **pagination** (10 / 50 / 100 per page)
+  - **Partial search** (name, email, body)
+  - **Sorting** on Post ID, Name, and Email
+  - Sorting cycles: No sort → Ascending → Descending → No sort
+  - State persistence (search, page, page size, sort) in `localStorage`
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **UI**
+  - Responsive layout
+  - Fancy **glassmorphism design**
+  - Gradient headings, hover effects
+  - Cross-browser compatible (Chrome, Firefox, Edge)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
+- **React 18**
+- **TypeScript**
+- **Vite**
+- **React Router v6**
+- **TailwindCSS**
+- **Lucide React (icons)**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+## 📂 Project Structure
+```bash
+src/
+ ├── api.ts            # API functions & types
+ ├── App.tsx           # Routes + Header
+ ├── App.css           # Header styling
+ ├── index.css         # Tailwind base
+ ├── main.tsx          # Entry point
+ ├── pages/
+ │    ├── Dashboard.tsx
+ │    └── Profile.tsx
+ └── components/
+      └── Pagination.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📦 Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# Clone the repository
+git clone https://github.com/vik802207/swift/.git
+# Install dependencies
+npm install
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Start development server
+npm run dev
 ```
+## 🌐 APIs Used
+
+- **Users API** → [https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)  
+  Used to fetch the first user record for the Profile page.
+
+- **Comments API** → [https://jsonplaceholder.typicode.com/comments](https://jsonplaceholder.typicode.com/comments)  
+  Used to fetch 500 dummy comments for the Dashboard.
+## ✨ Author
+
+**Developed by Vikash Gupta**  
+7th Semester @ IIITN | Web Developer 🚀
