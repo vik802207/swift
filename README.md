@@ -31,6 +31,17 @@ The project is deployed on **Vercel**.
   - Cross-browser compatible (Chrome, Firefox, Edge)
 
 ---
+## 📸 Screenshot  
+
+![Dashboard Screenshot](https://github.com/vik802207/swift/blob/main/img/Screenshot%20(815).png)
+![Dashboard Screenshot](https://github.com/vik802207/swift/blob/main/img/Screenshot%20(816).png)
+![Dashboard Screenshot](https://github.com/vik802207/swift/blob/main/img/Screenshot%20(817).png)
+![Dashboard Screenshot](https://github.com/vik802207/swift/blob/main/img/Screenshot%20(818).png)
+![Dashboard Screenshot](https://github.com/vik802207/swift/blob/main/img/Screenshot%20(819).png)
+![Dashboard Screenshot](https://github.com/vik802207/swift/blob/main/img/Screenshot%20(820).png)
+![Dashboard Screenshot](https://github.com/vik802207/swift/blob/main/img/Screenshot%20(821).png)
+![Dashboard Screenshot](https://github.com/vik802207/swift/blob/main/img/Screenshot%20(822).png)
+
 
 ## 🛠️ Tech Stack
 - **React 18**
