@@ -1,0 +1,192 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* Card wrapper */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  margin: 20px auto;
+  max-width: 1200px;
+  overflow-x: auto;
+}
+
+/* Toolbar section */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.controls input {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.controls select {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #f9f9f9;
+}
+
+/* Table styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  text-align: left;
+}
+
+.table th {
+  background: #f5f5f5;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.table th.sortable:hover {
+  background: #f0f0f0;
+}
+
+.table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.body-cell {
+  max-width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.pager-controls {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.pager-controls button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pager-controls button:hover:not(:disabled) {
+  background: #f0f0f0;
+}
+
+.pager-controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.page-input {
+  width: 50px;
+  padding: 4px 6px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .table th,
+  .table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+  .body-cell {
+    max-width: 200px;
+  }
+}

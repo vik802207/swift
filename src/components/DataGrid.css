@@ -1,0 +1,80 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.datagrid-wrapper {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.datagrid-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ec4899, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.datagrid-container {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.datagrid-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.datagrid-table thead {
+  background: linear-gradient(90deg, #ec4899, #f472b6, #8b5cf6);
+  color: #673AB7;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.datagrid-table th,
+.datagrid-table td {
+  padding: 14px 18px;
+  text-align: left;
+}
+
+.datagrid-table th {
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.datagrid-table th:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.datagrid-table tr.even {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.datagrid-table tr.odd {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.datagrid-table tr:hover {
+  background: rgba(236, 72, 153, 0.1);
+  transform: scale(1.01);
+  transition: all 0.2s ease-in-out;
+}
+
+.bold {
+  font-weight: 600;
+  color: #111;
+}
