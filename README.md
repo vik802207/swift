@@ -10,6 +10,11 @@ Includes a **Profile page** (with dummy user data) and a **Comments Dashboard pa
   - Displays first user record from dummy API
   - Glassmorphism profile card UI
   - Navigation back to Dashboard
+---
+## 🌍 Live Demo
+
+The project is deployed on **Vercel**.  
+🔗 [Live Dashboard](https://swift-liard-alpha.vercel.app/)
 
 - **Comments Dashboard**
   - Fetches 500 comments from dummy API
